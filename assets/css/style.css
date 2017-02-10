@@ -1,0 +1,90 @@
+.color-change {
+	animation: myFrame 2s ease-in-out 0s infinite normal forwards running;
+}
+@keyframes myFrame {
+	0% {
+		color: white;
+	}
+	20% {
+		color:green;
+	}
+	40% {
+		color:yellow;
+	}
+	60% {
+		color:blue;
+	}
+	80% {
+		color:red;
+	}
+	100% {
+		color:pink;
+	}
+}
+#logo {
+	animation: jumpingframe 1.5s ease-in-out 0s infinite alternate forwards running;
+	position:relative;
+}
+@keyframes jumpingframe {
+	0% {
+		width: 100%;
+	}
+	25% {
+		width: 90%;
+	}
+	50% {
+		width: 70%;
+	}
+	75% {
+		width: 50%;
+	}
+	100% {
+		width: 25%;
+	}
+
+}
+#spin {
+	animation: spinframe 1s ease-in-out 0s infinite normal forwards running;
+	position:relative;
+}
+@keyframes spinframe {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(180deg);
+	}
+}
+.mainContent {
+	background:white;
+	margin-bottom:15px;
+}
+.sideBar {
+	margin-left:20px;
+	background: white;
+	padding-bottom:20px;
+	text-align: center;
+}
+body {
+	background-image:url("../images/mountains.jpg");
+	height: 100%;
+}
+#footer1 {
+  position: absolute;
+  right: 0;
+  bottom: -400px;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+.contact-form {
+	height: 400px;
+}
+#message {
+	width: 400px;
+	height:300px;
+}
